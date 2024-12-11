@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">thank you for your survey</p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label id="name-label"
+          >Name:
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label"
+          >Email:
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <label id="number-label"
+          >Age:
+          <input
+            id="number"
+            type="number"
+            placeholder="Age"
+            min="13"
+            max="100"
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label
+          >Which option best describes your current role?
+          <select id="dropdown">
+            <option>(select one)</option>
+            <option>Student</option>
+            <option>Job</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label
+          >Would you recommend freeCodeCamp to a friend? <br />
+          <input
+            type="radio"
+            name="recommend"
+            id="inline"
+            value="yes"
+            checked
+          />yes</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="recommend"
+            id="inline"
+            value="yes"
+          />no</label
+        >
+      </fieldset>
+      <fieldset>
+        <label
+          >What would you like to see improved? <br />
+          <input
+            type="checkbox"
+            id="inline"
+            value="improved-frontend"
+          />front-end project</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            id="inline"
+            value="improved-backend"
+          />back-end project</label
+        >
+      </fieldset>
+      <fieldset>
+        <label
+          >Any comments or suggestions?<textarea
+            placeholder="add comment here..."
+            rows="3"
+            cols="30"
+          ></textarea>
+        </label>
+      </fieldset>
+      <button id="submit" type="submit" value="submit">Submit</button>
+    </form>
+  </body>
+</html>
